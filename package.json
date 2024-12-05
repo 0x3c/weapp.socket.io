@@ -24,7 +24,7 @@
     "socket.io-client": "^4.0.0"
   },
   "scripts": {
-    "prepublish": "rm -rf ./lib ./dist && npm run build",
+    "prepublish": "rm -rf ./lib ./dist && npm run build:wechat",
     "build-dev:alipay": "webpack --config webpack.config.dev.js --env.target=Alipay",
     "build-dev:wechat": "webpack --config webpack.config.dev.js --env.target=Wechat",
     "build:alipay": "webpack --config webpack.config.js --env.target=Alipay",
